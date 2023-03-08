@@ -1,0 +1,104 @@
+﻿@page "/"
+
+@using System.Text.Json
+
+@inject IJSRuntime JSRuntime
+@inject HttpClient HttpClient
+
+
+
+<PageTitle>OpenShift Serverless Demo</PageTitle>
+
+<h1>OpenShift Serverless Demo</h1>
+
+This demonstrate uses an OpenShift "Serverless" backend component — based on Knative — to receive a photo and overlay an image and text.
+
+<h1>Smile for the camera!</h1>
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col">
+            <video id="videoFeed" width="640" height="480" />
+            <canvas class="d-none" id="currentFrame" width="640" height="480" />
+        </div>
+        <div class="col">
+            @if (!string.IsNullOrEmpty(frameUri))
+            {
+                <img src="@frameUri" width="640" />
+            } else
+            {
+                <p>Results will appear here</p>
+            }
+        </div>
+    </div>
+</div>
+<br />
+<button class="btn btn-primary mb-3" disabled="@isTaskRunning" @onclick="CaptureFrame">Take Picture</button>
+<br />
+
+
+
+
+@code {
+
+    private string frameUri = "";
+    bool isTaskRunning;
+
+    public class Photo
+    {
+        public string imageData { get; set; }
+        public string imageType { get; set; }
+        public string greeting { get; set; }
+        public string dateFormatString { get; set; }
+        public string language { get; set; }
+        public string location { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await JSRuntime.InvokeVoidAsync("startVideo", "videoFeed");
+    }
+    private async Task CaptureFrame()
+    {
+        isTaskRunning = true;
+        await Task.Delay(1);
+        await JSRuntime.InvokeAsync<String>("getFrame", "videoFeed", "currentFrame", DotNetObjectReference.Create(this));
+    }
+
+    [JSInvokable]
+    public async void ProcessImage(string imageString)
+    {
+
+        Photo photo = new Photo();
+        photo.imageData = imageString.Split(',')[1];
+        photo.imageType = "JPG";
+        photo.greeting = "Serverless!";
+        photo.dateFormatString = "MMMM d, yyyy";
+        photo.language = "en";
+        photo.location = "US";
+
+        string postBody = JsonSerializer.Serialize(photo);
+        string fromEnvURL = Environment.GetEnvironmentVariable("SERVICE_URL");
+        string serviceURL =  fromEnvURL ?? "https://overlayimage-rhn-engineering-dschenck-dev.apps.sandbox.x8i5.p1.openshiftapps.com/overlayImage";
+
+        try
+        {
+            var response = await HttpClient.PostAsJsonAsync(serviceURL, photo);
+
+            photo = await response.Content.ReadFromJsonAsync<Photo>();
+            byte[] imageBytes = Convert.FromBase64String(photo.imageData);
+            var imagesrc = Convert.ToBase64String(imageBytes);
+            frameUri = string.Format("data:image/svg;base64,{0}", imagesrc);
+
+        }
+        catch (Exception)
+        {
+            //throw;
+        }
+        finally
+        {
+            isTaskRunning = false;
+            StateHasChanged();
+        }
+    }
+
+}
