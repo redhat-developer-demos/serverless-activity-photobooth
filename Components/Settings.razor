@@ -1,8 +1,8 @@
 ﻿<div class="settings-card">
-    <div class="card" style="width: 640;">
+    <div class="card" style="width: 1000;">
         <div class="card-body">
             <p class="card-header">Service URL</p>
-            <input type="text" @bind="@serviceUrl" @oninput="OnInputEvent" />
+            <input type="text" style="width: 900px;" @bind="@serviceUrl" @oninput="OnInputEvent" />
             <button class="btn btn-primary" @onclick="@(() => OnClick.InvokeAsync(serviceUrl))">Save</button>
         </div>
     </div>

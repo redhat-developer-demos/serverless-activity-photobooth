@@ -15,6 +15,7 @@
 This demonstrate uses an OpenShift "Serverless" backend component — based on Knative — to receive a photo and overlay an image and text.
 
 <h1>Smile for the camera!</h1>
+<p><Settings OnClick="SettingClickHandler"></Settings></p>
 <div class="container-fluid">
     <div class="row align-items-center">
         <div class="col">
@@ -27,11 +28,15 @@ This demonstrate uses an OpenShift "Serverless" backend component — based on K
                 <img src="@frameUri" width="640" />
             } else
             {
-                <p><Settings OnClick="SettingClickHandler"></Settings></p>
+                <p>Results will appear here</p>
             }
         </div>
     </div>
 </div>
+@if (!string.IsNullOrEmpty(serviceUrl))
+{
+}
+
 <br />
 <button class="btn btn-primary mb-3" disabled="@isTaskRunning" @onclick="CaptureFrame">Take Picture</button>
 <br />
