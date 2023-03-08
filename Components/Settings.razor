@@ -1,0 +1,20 @@
+﻿<div class="settings-card">
+    <div class="card" style="width: 640;">
+        <div class="card-body">
+            <p class="card-header">Service URL</p>
+            <input type="text" @bind="@serviceUrl" @oninput="OnInputEvent" />
+            <button class="btn btn-primary" @onclick="@(() => OnClick.InvokeAsync(serviceUrl))">Save</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string serviceUrl = "";
+    private void OnInputEvent(ChangeEventArgs changeEvent)
+    {
+        serviceUrl = (string)changeEvent.Value;
+    }
+
+    [Parameter] public EventCallback<string> OnClick { get; set; }
+
+}

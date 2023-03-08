@@ -1919,11 +1919,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dschenck\\src\\github\\donschenck\\photobooth\\photobooth.csproj",
+      "projectUniqueName": "C:\\Users\\dschenck\\src\\github\\donschenck\\serverless-activity-photobooth\\photobooth.csproj",
       "projectName": "photobooth",
-      "projectPath": "C:\\Users\\dschenck\\src\\github\\donschenck\\photobooth\\photobooth.csproj",
+      "projectPath": "C:\\Users\\dschenck\\src\\github\\donschenck\\serverless-activity-photobooth\\photobooth.csproj",
       "packagesPath": "C:\\Users\\dschenck\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dschenck\\src\\github\\donschenck\\photobooth\\obj\\",
+      "outputPath": "C:\\Users\\dschenck\\src\\github\\donschenck\\serverless-activity-photobooth\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

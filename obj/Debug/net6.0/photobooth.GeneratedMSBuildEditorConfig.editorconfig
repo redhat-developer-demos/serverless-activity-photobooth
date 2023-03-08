@@ -9,41 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = photobooth
 build_property.RootNamespace = photobooth
-build_property.ProjectDir = C:\Users\dschenck\src\github\donschenck\photobooth\
+build_property.ProjectDir = C:\Users\dschenck\src\github\donschenck\serverless-activity-photobooth\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dschenck\src\github\donschenck\photobooth
+build_property.MSBuildProjectDirectory = C:\Users\dschenck\src\github\donschenck\serverless-activity-photobooth
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dschenck/src/github/donschenck/photobooth/App.razor]
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dschenck/src/github/donschenck/photobooth/Pages/Counter.razor]
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/Components/Settings.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZXR0aW5ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dschenck/src/github/donschenck/photobooth/Pages/FetchData.razor]
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dschenck/src/github/donschenck/photobooth/Pages/Index.razor]
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dschenck/src/github/donschenck/photobooth/Shared/SurveyPrompt.razor]
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dschenck/src/github/donschenck/photobooth/_Imports.razor]
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dschenck/src/github/donschenck/photobooth/Shared/MainLayout.razor]
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-z5clcvslrp
 
-[C:/Users/dschenck/src/github/donschenck/photobooth/Shared/NavMenu.razor]
+[C:/Users/dschenck/src/github/donschenck/serverless-activity-photobooth/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-sxhajpeud2

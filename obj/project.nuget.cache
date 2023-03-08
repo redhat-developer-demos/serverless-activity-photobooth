@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M+cACUxUyAAWbJq+6sMiDaN5euf+6O4cSgjUJ+w/o90g/3uiuUAUyJ3iQnsc2RaXQi6YdV3SC4qyu5MNAZRwaQ==",
+  "dgSpecHash": "cjSlcgDL7YbBZOhDylEkH0uHZLTPrS1eJbGzntiXoCh2E8bwDzrKArt/DTHXbP1NYDNTOhPKOvOWVblVoob+3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dschenck\\src\\github\\donschenck\\photobooth\\photobooth.csproj",
+  "projectFilePath": "C:\\Users\\dschenck\\src\\github\\donschenck\\serverless-activity-photobooth\\photobooth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dschenck\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.13\\microsoft.aspnetcore.authorization.6.0.13.nupkg.sha512",
     "C:\\Users\\dschenck\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.13\\microsoft.aspnetcore.components.6.0.13.nupkg.sha512",
