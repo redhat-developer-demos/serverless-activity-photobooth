@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-cx\/3nJhFns3tZhQNQOyiRyKJESKxOjLVufzWnri6KSA=",
       "netstandard.dll": "sha256-yWufW5W4SSfjocBcWTEDqnFwTd\/VYtLMc2Y9mPmlggc=",
       "System.Private.CoreLib.dll": "sha256-H009wzPwRoDZlwvpN4KLCsUwN7Y1AmjKB3PIEHA7ObQ=",
-      "photobooth.dll": "sha256-dCIfCsjcsu7dblSAXjA9alPdlTiufyCjMWK3Rc+knDI="
+      "photobooth.dll": "sha256-yaKP5POC4jH00GOtuI1xIEssIZ2CtxmPri\/WE7iS1gM="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "photobooth.pdb": "sha256-\/zjuBu6spJSHRYcmU0IUOxM8wgYEkLlHmCOY2\/5CZeY="
+      "photobooth.pdb": "sha256-ua7LAJPwzYBkTHE1mZCLXPaOkMu2Qp68MB0N2UqRHd0="
     },
     "runtime": {
       "dotnet.6.0.11.bm7f015p13.js": "sha256-F30V+6jU3jwJYFZoLuwMAqzTiOXu6q7zGgOdjYBofDI=",

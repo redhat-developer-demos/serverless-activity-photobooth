@@ -28,14 +28,17 @@ This demonstrate uses an OpenShift "Serverless" backend component — based on K
                 <img src="@frameUri" width="640" />
             } else
             {
-                <p>Results will appear here</p>
+                if (!string.IsNullOrEmpty(serviceUrl))
+                {
+                    <p>Results from @serviceUrl will appear here</p>
+                } else
+                {
+                    <p>A Service URL must be supplied before results can be retrieved.</p>
+                }
             }
         </div>
     </div>
 </div>
-@if (!string.IsNullOrEmpty(serviceUrl))
-{
-}
 
 <br />
 <button class="btn btn-primary mb-3" disabled="@isTaskRunning" @onclick="CaptureFrame">Take Picture</button>
